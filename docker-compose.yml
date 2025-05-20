@@ -1,0 +1,9 @@
+version: "3.8"
+
+services:
+  extension-dev:
+    build: .
+    volumes:
+      - .:/app
+    working_dir: /app
+    command: npm run build

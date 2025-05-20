@@ -1,0 +1,17 @@
+{
+  "name": "chrome-extension-ts",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "esbuild src/background.ts --bundle --outfile=dist/background.js",
+    "lint": "eslint src --ext .ts",
+    "format": "prettier --write src"
+  },
+  "devDependencies": {
+    "esbuild": "^0.20.0",
+    "eslint": "^8.0.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-prettier": "^5.0.0",
+    "prettier": "^3.0.0",
+    "typescript": "^5.4.0"
+  }
+}
